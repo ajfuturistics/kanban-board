@@ -15,6 +15,7 @@ const socketIO = require("socket.io")(http, {
   },
 });
 
+// Socket IO Listeners
 socketIO.on("connection", (socket) => {
   console.log(`⚡: ${socket.id} user just connected!`);
 
