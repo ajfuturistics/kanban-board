@@ -32,6 +32,7 @@ const TasksContainer = ({ socket }) => {
     fetchTasks();
   }, []);
 
+  // listening to events
   useEffect(() => {
     socket.on("tasks", (data) => setTasks(data));
   }, [socket]);
